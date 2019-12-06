@@ -1,20 +1,9 @@
 #include <iostream>
 typedef unsigned int digit;
 
-
 digit gcd(digit k, digit l){
-    if (k % l)
-    {
-        return gcd(l, k % l);
-    }
-    else
-    {
-        return l;
-    }
-    
-    return k % l;
+    return (k % l)? gcd(l, k % l) : l;
 }
-
 
 int main(){
     digit n, m;
