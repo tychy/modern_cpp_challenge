@@ -1,8 +1,7 @@
 #include <iostream>
-
+typedef unsigned int digit;
 
 int main(){
-    typedef unsigned int digit;
     digit n;
     std::cout << "input number :";
     std::cin >> n;
